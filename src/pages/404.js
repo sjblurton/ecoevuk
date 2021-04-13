@@ -1,13 +1,21 @@
-import * as React from "react"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react"
+import Layout from "../components/layout/layout"
+import SEO from "../components/layout/seo"
+import Button from "../shared/button"
+import NotFoundSVG from "../assets/svg/404"
+import { Wrapper } from "../styles/404"
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Wrapper>
+      <h2>404: Not found</h2>
+      <p>
+        <strong>Oops...</strong> seems like something went wrong.
+      </p>
+      <NotFoundSVG />
+      <Button>go back</Button>
+    </Wrapper>
   </Layout>
 )
 

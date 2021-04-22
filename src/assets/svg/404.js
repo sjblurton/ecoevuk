@@ -1,6 +1,6 @@
 import React from "react"
 
-function NotFoundSVG() {
+const NotFoundSVG = props => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,7 @@ function NotFoundSVG() {
       height="778"
       fill="none"
       viewBox="0 0 1121 778"
+      {...props}
     >
       <g clipPath="url(#clip0)">
         <path

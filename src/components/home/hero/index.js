@@ -12,7 +12,7 @@ import {
 } from "./styles/hero"
 import HeroSVG from "../../../assets/svg/car"
 import { Button } from "../../../shared"
-import { Link } from "gatsby"
+import { HomeContent, BUTTON_VARIANTS, ROUTS } from "../../../data/content"
 
 const Hero = () => {
   return (
@@ -25,25 +25,22 @@ const Hero = () => {
           <HeroEcoEv>
             <span>ECO</span>
             <span>EV</span>
+            <small>UK</small>
           </HeroEcoEv>
-          <HeroTitle>
-            Ditch The Diesel, fuel at home, or work place with cleaner, and
-            cheaper electricity!
-          </HeroTitle>
+          <HeroTitle>{HomeContent.hero.title}</HeroTitle>
           <HeroButtons>
-            <Button>get a quote</Button>
-            <Button variant="outline">learn more</Button>
+            <Button to={ROUTS.CONTACT}>get a quote</Button>
+            <Button to="#installation" variant={BUTTON_VARIANTS.OUTLINE}>
+              learn more
+            </Button>
           </HeroButtons>
           <HeroSubTitle>
             <span>ECO</span>
             <span>EV</span>
-            UK are OLEV approved and certified to install EV home, and business
-            chargers. Based in the local area.
+            <small>UK </small>
+            {HomeContent.hero.subTitle}
           </HeroSubTitle>
-          <HeroSmallText>
-            There's a OLEV GRANT for homeowners of up to £350 for installation
-            if you qualify
-          </HeroSmallText>
+          <HeroSmallText>{HomeContent.hero.smallText}</HeroSmallText>
         </HeroContent>
       </HeroSection>
     </HeroContainer>

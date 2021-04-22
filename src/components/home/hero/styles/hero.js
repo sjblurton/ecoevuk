@@ -132,6 +132,10 @@ export const HeroEcoEv = styled.h1`
   span:last-of-type {
     color: ${props => props.theme.color.secondary};
   }
+  small {
+    color: ${props => props.theme.color.primary};
+    font-size: 1rem;
+  }
 `
 export const HeroTitle = styled.h2`
   ${props => props.theme.text.h3}
@@ -143,6 +147,9 @@ export const HeroSubTitle = styled.h3`
   }
   span:last-of-type {
     color: ${props => props.theme.color.secondary};
+  }
+  small {
+    color: ${props => props.theme.color.primary};
   }
 
   ${props => props.theme.text.small}

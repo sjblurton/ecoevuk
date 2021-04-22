@@ -4,6 +4,7 @@ import SEO from "../components/layout/seo"
 import Button from "../shared/button"
 import NotFoundSVG from "../assets/svg/404"
 import { Wrapper } from "../styles/404"
+import { navigate } from "gatsby"
 
 const NotFoundPage = () => (
   <Layout>
@@ -14,7 +15,9 @@ const NotFoundPage = () => (
         <strong>Oops...</strong> seems like something went wrong.
       </p>
       <NotFoundSVG />
-      <Button>go back</Button>
+      <div onClick={() => navigate(-1)}>
+        <Button>go back</Button>
+      </div>
     </Wrapper>
   </Layout>
 )

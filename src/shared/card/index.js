@@ -12,13 +12,13 @@ import {
   Content,
   Text,
 } from "./styles/card"
-import Img from "gatsby-image"
+import GatsbyImage from "gatsby-image"
 
 const Card = ({ image, title, price, body, button1, button2, to, href }) => {
   return (
     <Wrapper>
       <Image>
-        <Img
+        <GatsbyImage
           fluid={image}
           alt={title}
           style={{
@@ -27,6 +27,7 @@ const Card = ({ image, title, price, body, button1, button2, to, href }) => {
           }}
           imgStyle={{ objectFit: "contain" }}
           objectFit="contain"
+          placeholder="blurred"
         />
       </Image>
       <Body>

@@ -39,10 +39,11 @@ const Chargers = () => {
   `)
   const { allProductsJson: chargers } = data
   const { allImageSharp: images } = data
-  chargers.edges[0].node.image = images.edges[2].node
+  chargers.edges[0].node.image = images.edges[1].node
   chargers.edges[1].node.image = images.edges[4].node
   chargers.edges[2].node.image = images.edges[0].node
   chargers.edges[3].node.image = images.edges[3].node
+
   return (
     <Wrapper>
       <Main>

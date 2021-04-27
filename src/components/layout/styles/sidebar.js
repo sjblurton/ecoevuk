@@ -79,11 +79,8 @@ export const LinkWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 8px;
+  cursor: pointer;
 
-  &:hover {
-    cursor: pointer;
-    opacity: 0.9;
-  }
   &:hover ${ButtonUnderline} {
     transform: scale(1);
     transform-origin: left;

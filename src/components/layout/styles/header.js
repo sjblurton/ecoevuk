@@ -63,11 +63,8 @@ export const LinkWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 8px;
+  cursor: pointer;
 
-  &:hover {
-    cursor: pointer;
-    opacity: 0.9;
-  }
   &:hover ${ButtonUnderline} {
     transform: scale(1);
     transform-origin: left;
@@ -90,9 +87,7 @@ export const Burger = styled.div`
   & svg path {
     stroke: ${props => props.theme.color.primary};
   }
-  &:hover {
-    opacity: 0.8;
-  }
+
   &:focus {
     outline: 1px dotted ${props => props.theme.color.primary};
   }

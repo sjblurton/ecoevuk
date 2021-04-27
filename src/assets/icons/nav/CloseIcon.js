@@ -10,7 +10,7 @@ function CloseSVG() {
       viewBox="0 0 24 24"
     >
       <path
-        stroke="#111"
+        stroke="#0E0E2C"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"

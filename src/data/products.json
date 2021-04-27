@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "EO-Mini-Pro",
+    "image": {
+      "src": "EO-Mini-Pro.png"
+    },
+
+    "title": "EO Mini Pro",
+    "cardBody": "Control and monitor your charger via your smartphone through the JuiceNet app, powered by EnelX.  Plan charging around your off-peak electricity using the built-in  scheduling feature.",
+    "body": [
+      "Control and monitor your  charger via your smartphone through the JuiceNet app, powered by EnelX.  Plan charging around your off-peak electricity using the built-in  scheduling feature. Monitor and adjust power consumption. See live  updates of your vehicle's charge status. "
+    ],
+    "price": "£699",
+    "list": [
+      "Compatible with all plug-in vehicle brands",
+      "Power Ratings: 3.6kW & 7kW",
+      "Universal socket or Tethered (Type 1 or 2)",
+      "Smartphone app controlled",
+      "3-year product warranty",
+      "18th Edition IET Wiring Compliant",
+      "OLEV approved: Home Charge Grant (£500)"
+    ]
+  },
+  {
+    "slug": "Andersen-A2",
+    "image": {
+      "src": "Andersen-A2.png"
+    },
+    "title": "Andersen A2",
+    "cardBody": "The more stylish choice with a wide selection of colors, and finishes. The tethered cable packs away neatly with the type 2 plug tucked easily accessible under the lid on the top of the unit.",
+    "body": [
+      "Andersen A2 is a thing of beauty. Make a feature of your chargepoint with this unit.",
+      "Customize your A2 with a choice of colours for surround and front panel.",
+      "The tethered cable packs away neatly with the type 2 plug tucked easily accessible under the lid on the top of the unit. The brushes on the charger also clean the cable each time it is packed away or taken out for use."
+    ],
+
+    "price": "£995",
+    "list": [
+      "Compatible with all type 2 electric and hybrid cars",
+      "Certified for all European countries",
+      "3 years of Andersen care cover",
+      "No need for earth rods",
+      "18th edition compliant"
+    ]
+  },
+  {
+    "slug": "project-ev-pro-earth",
+    "image": {
+      "src": "project-ev-pro-earth.jpg"
+    },
+    "title": "Project EV Pro Earth",
+    "cardBody": "This unit is ideal for locations with little or no wifi signal, as it can be provided with integrated 4g and sim card to connect to the internet.",
+    "body": [
+      "The Project EV Pro Earth features as standard the option to lock your EV cable to the unit via the smart app, essentially making your charger tethered.  The benefit of this is that should your cable become damaged replacement is a DIY job with no need for an electrical engineer.",
+      "This unit is ideal for locations with little or no WiFi signal, as it can be provided with integrated 4g and sim card to connect to the internet."
+    ],
+    "price": "£599",
+    "list": [
+      "Smart charging (see smart features)",
+      "Built in earthing - no earthing required",
+      "7.3kW single phase",
+      "Works with all plug-in vehicle brands",
+      "Full electrical protection, including over/under temperature",
+      "Smart app controlled",
+      "Solar compatible - with existing installations",
+      "IP65 fully weather resistant",
+      "Fully OLEV accredited and 18th edition compliant",
+      "Intelligent power adjustment, emergency stop, Wifi/APP/ethernet monitoring",
+      "5 year manufacturer's warranty (T&Cs apply)"
+    ]
+  },
+  {
+    "slug": "podpoint-solo",
+    "image": {
+      "src": "podpoint-solo.jpg"
+    },
+    "title": "Podpoint solo",
+    "cardBody": "The Podpoint solo is one of the few chargers with inbuilt safety technology to detect any faults within your electrical network which may result in danger to the user.",
+    "body": [
+      "The Podpoint solo is one of the few chargers with inbuilt safety technology to detect any faults within your electrical network which may result in danger to the user. This eliminates the need for the installation of an earth rod which is required for many other chargers on the market"
+    ],
+
+    "price": "£650",
+    "list": [
+      "Wi-Fi enabled smart charger which pairs with the Pod Point App (iOS  & Android devices) via Wi-Fi, so you can view all your charging  activity and associated costs on your smartphone",
+      "The Wi-Fi connection also enables remote support and over-the-air  software updates that can enhance the performance of your charge point",
+      "Includes automatic power balancing (load balancing) so you can charge your car in harmony with your home",
+      "Available with charging speeds of 3.6kW or 7.2kW",
+      "Provides an electric vehicle with up to 30 miles of range per hour (RPH)",
+      "Compatible with all plug-in vehicles",
+      "Available with a universal socket or tethered type 1 / type 2 connector",
+      "Tethered lead 4.8m in length"
+    ]
+  }
+]

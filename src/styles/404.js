@@ -11,13 +11,15 @@ const peep2 = keyframes`
 `
 
 export const Wrapper = styled.div`
-  padding: 60px 5% 0 5%;
+  padding: 68px 5% 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 87vh;
+  min-height: calc(100vh - 60px);
+
   & h2 {
     ${props => props.theme.text.h2};
     color: ${props => props.theme.color.dark};
@@ -44,5 +46,8 @@ export const Wrapper = styled.div`
     & #peep2 {
       animation-name: ${peep2};
     }
+  }
+  div:last-child {
+    margin-bottom: 8px;
   }
 `

@@ -11,10 +11,8 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header siteTitle="ECOEVUK" />
-      <div>
-        <main>{children}</main>
-        <Footer />
-      </div>
+      <main>{children}</main>
+      <Footer />
     </ThemeProvider>
   )
 }

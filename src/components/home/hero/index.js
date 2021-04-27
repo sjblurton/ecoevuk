@@ -30,9 +30,9 @@ const Hero = () => {
           <HeroTitle>{HomeContent.hero.title}</HeroTitle>
           <HeroButtons>
             <Button to={ROUTS.CONTACT}>get a quote</Button>
-            <Button to="#installation" variant={BUTTON_VARIANTS.OUTLINE}>
-              learn more
-            </Button>
+            <a href="/#installation">
+              <Button variant={BUTTON_VARIANTS.OUTLINE}>learn more</Button>
+            </a>
           </HeroButtons>
           <HeroSubTitle>
             <span>ECO</span>

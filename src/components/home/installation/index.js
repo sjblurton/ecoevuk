@@ -6,7 +6,6 @@ import {
   Wrapper,
   ButtonContainer,
   EcoEv,
-  Car,
 } from "./styles/installation"
 import { Button } from "../../../shared"
 import { ROUTS, HomeContent } from "../../../data/content"

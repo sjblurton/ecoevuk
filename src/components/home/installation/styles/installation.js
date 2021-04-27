@@ -1,5 +1,4 @@
 import styled from "styled-components/macro"
-import { StaticImage } from "gatsby-plugin-image"
 
 export const Wrapper = styled.section`
   padding: clamp(16px, 5%, 64px);

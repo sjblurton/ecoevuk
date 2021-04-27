@@ -1,6 +1,6 @@
 import React from "react"
 import { Card } from "../../../shared"
-import { HomeContent, loevImg } from "../../../data/content"
+import { HomeContent } from "../../../data/content"
 import {
   GreyContainer,
   Wrapper,
@@ -10,15 +10,27 @@ import {
   GreenList,
   GreenItem,
   GreenContext,
-  EcoEv,
 } from "./styles/info"
+import { useStaticQuery, graphql } from "gatsby"
 
 const InfoSection = () => {
+  const data = useStaticQuery(graphql`
+    {
+      file(name: { eq: "loev" }) {
+        childImageSharp {
+          fluid(maxWidth: 330) {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Wrapper>
       <GreyContainer>
         <Card
-          image={loevImg}
+          image={data.file.childImageSharp.fluid}
           title={HomeContent.info.card.title}
           body={HomeContent.info.card.body}
           button2="learn more"

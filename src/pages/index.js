@@ -1,5 +1,5 @@
 import React from "react"
-import { Hero, Info, Installation } from "../components/home"
+import { Finance, Hero, Info, Installation } from "../components/home"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
@@ -9,6 +9,7 @@ const HomePage = () => (
     <Hero />
     <Info />
     <Installation />
+    <Finance />
   </Layout>
 )
 

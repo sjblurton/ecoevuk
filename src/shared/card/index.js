@@ -12,12 +12,22 @@ import {
   Content,
   Text,
 } from "./styles/card"
+import Img from "gatsby-image"
 
 const Card = ({ image, title, price, body, button1, button2, to, href }) => {
   return (
     <Wrapper>
       <Image>
-        <img src={image} alt={title} />
+        <Img
+          fluid={image}
+          alt={title}
+          style={{
+            width: "-webkit-fill-available",
+            height: "-webkit-fill-available",
+          }}
+          imgStyle={{ objectFit: "contain" }}
+          objectFit="contain"
+        />
       </Image>
       <Body>
         <Content>

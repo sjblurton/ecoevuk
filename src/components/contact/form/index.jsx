@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Button } from "../../../shared";
+import React, { useState } from "react"
+import { Button } from "../../../shared"
 import {
   StyledError,
   Title,
@@ -10,9 +10,9 @@ import {
   StyledLabel,
   StyledSuccess,
   ButtonContainer,
-} from "./styles/form";
-import { Formik, Form, FormikProps } from "formik";
-import * as Yup from "yup";
+} from "./styles/form"
+import { Formik, Form } from "formik"
+import * as Yup from "yup"
 
 const formStatusProps = {
   success: {
@@ -24,44 +24,44 @@ const formStatusProps = {
     message: "Something went wrong. Please try again.",
     type: "error",
   },
-};
+}
 
 function EmailForm() {
-  const [displayFormStatus, setDisplayFormStatus] = useState(false);
+  const [displayFormStatus, setDisplayFormStatus] = useState(false)
   const [formStatus, setFormStatus] = useState({
     message: "",
     type: "",
-  });
+  })
 
   const sendMessage = async (data, resetForm) => {
     try {
       if (data) {
-        setFormStatus(formStatusProps.success);
-        resetForm({});
+        setFormStatus(formStatusProps.success)
+        resetForm({})
       }
     } catch (error) {
-      const response = error.response;
+      const response = error.response
       if (response.status === 400) {
-        setFormStatus(formStatusProps.error);
+        setFormStatus(formStatusProps.error)
       } else {
-        setFormStatus(formStatusProps.error);
+        setFormStatus(formStatusProps.error)
       }
     } finally {
-      setDisplayFormStatus(true);
-      console.log(data);
+      setDisplayFormStatus(true)
+      console.log(data)
     }
-  };
-  const phoneRegExp = /^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,3})|(\(?\d{2,3}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$/;
+  }
+  const phoneRegExp = /^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,3})|(\(?\d{2,3}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$/
 
   return (
     <div>
       <Formik
         initialValues={{ email: "", name: "", message: "", phone: "" }}
         onSubmit={(values, actions) => {
-          sendMessage(values, actions.resetForm);
+          sendMessage(values, actions.resetForm)
           setTimeout(() => {
-            actions.setSubmitting(false);
-          }, 500);
+            actions.setSubmitting(false)
+          }, 500)
         }}
         validationSchema={Yup.object().shape({
           email: Yup.string().email().required("Enter valid email-id."),
@@ -72,7 +72,7 @@ function EmailForm() {
             .matches(phoneRegExp, "Phone number is not valid"),
         })}
       >
-        {(props) => {
+        {props => {
           const {
             values,
             touched,
@@ -80,7 +80,7 @@ function EmailForm() {
             handleBlur,
             handleChange,
             isSubmitting,
-          } = props;
+          } = props
           return (
             <Form>
               <StyledFormWrapper>
@@ -150,11 +150,11 @@ function EmailForm() {
                 </StyledForm>
               </StyledFormWrapper>
             </Form>
-          );
+          )
         }}
       </Formik>
     </div>
-  );
+  )
 }
 
-export default EmailForm;
+export default EmailForm

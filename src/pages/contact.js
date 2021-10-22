@@ -1,12 +1,12 @@
 import React from "react"
 import Contact from "../components/contact"
 import Layout from "../components/layout/layout"
-import SEO from "../components/layout/seo"
+import Seo from "../components/layout/seo"
 
 const ContactPage = () => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <Seo title="Contact" />
       <Contact />
     </Layout>
   )

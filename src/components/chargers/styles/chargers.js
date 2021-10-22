@@ -23,9 +23,7 @@ export const Grid = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  & article {
-    margin-bottom: 24px;
-  }
+  gap: 24px;
 `
 export const Info = styled.div`
   display: flex;

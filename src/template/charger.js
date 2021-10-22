@@ -16,14 +16,14 @@ import Layout from "../components/layout/layout"
 import Img from "gatsby-image"
 import { navigate } from "gatsby"
 import { Button } from "../shared"
-import SEO from "../components/layout/seo"
+import Seo from "../components/layout/seo"
 
 const Charger = ({ data }) => {
   const { productsJson: charger } = data
   const { imageSharp: image } = data
   return (
     <Layout>
-      <SEO title={charger.title} />
+      <Seo title={charger.title} />
       <Wrapper>
         <Header>
           <Title>{charger.title}</Title>

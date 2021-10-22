@@ -9,6 +9,10 @@ export const Wrapper = styled.section`
   max-height: 820px;
   flex-direction: column;
   overflow: hidden;
+
+  @media (min-width: 1000px) {
+    padding-left: 20%;
+  }
 `
 export const Title = styled.h2`
   padding-bottom: clamp(16px, 5%, 32px);

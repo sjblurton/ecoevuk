@@ -77,7 +77,7 @@ export const MainContent = styled.article`
 
   display: flex;
   flex-direction: column;
-  min-width: 300px;
+  width: 100%;
   max-width: 400px;
   justify-content: space-evenly;
 `

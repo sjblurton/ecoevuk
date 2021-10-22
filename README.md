@@ -9,10 +9,10 @@ Electric cars are of interest to me, and withe the sales of new ICE cars being s
 ## Screenshots
 
 > Mobile
-> ![Mobile-Hero-Screenshot](https://github.com/sjblurton/ecoevuk/tree/master/src/assets/screenshots/android.png)
+> ![Mobile-Hero-Screenshot](https://github.com/sjblurton/ecoevuk/blob/master/src/assets/screenshots/android.png)
 
 > Desktop
-> ![Desktop-Hero-Screenshot](https://github.com/sjblurton/ecoevuk/tree/master/src/assets/screenshots/browser_window.png)
+> ![Desktop-Hero-Screenshot](https://github.com/sjblurton/ecoevuk/blob/master/src/assets/screenshots/browser_window.png)
 
 ## Getting started
 

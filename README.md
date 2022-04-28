@@ -22,6 +22,7 @@ link to the live site... https://ecoevuk.netlify.app/
 
 - Gatsby
 - Styled Components
+- GraphQL
 - Formik
 - Yup form validation
 - SEO ready
